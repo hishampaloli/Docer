@@ -1,0 +1,14 @@
+.feature-item{
+    height: 200px;
+}
+.feature-item  img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+
+.feature-item  img:hover {
+    width: 155px;
+    height: 155px;
+}

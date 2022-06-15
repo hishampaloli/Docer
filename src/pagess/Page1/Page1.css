@@ -1,0 +1,330 @@
+.main {
+    background-color: #f9f9f9
+}
+.section-1 {
+    background:#f9f9f9 url(./img/search-bg.png) no-repeat bottom center;
+    min-height: 450px;
+    background-size: 100% auto;
+    padding-top: 20vh;
+    height: 88vh;
+}
+.heading-text {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.heading-p {
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.search-box {
+    display: flex;
+    margin-top: 30px;
+}
+
+.search-box form {
+    width: 80%;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.aling-items-justify {
+    align-items: center;
+    justify-content: center;
+}
+
+.aling-items-justify-space-btw {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box form input::placeholder {
+    background-color:white;    border-color: #dcdcdc;
+    color:rgb(187, 187, 187);
+    font-size: 15px;
+    min-height: 46px;
+    padding: 6px 15px;
+}
+
+.search-box form .form-control-2 {
+    width: 400px;
+}
+.form-group {
+    margin: 0 10px;
+}
+.aling-items {
+    display: flex;
+    align-items: center;
+}
+.search-box form button {
+    margin-left: 10px;
+    height: 37px;
+    background-color: #09e5ab;
+    border: 1px solid #09e5ab;
+}
+
+.section-specialities {
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+}
+.speicality-item {
+    display: flex;
+    flex-direction: column;
+}
+.speicality-item p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0 0;
+}
+
+.specialities-slider {
+    display: flex;
+}
+.speicality-img {
+    width: 150px;
+   height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.146);
+    display: flex;
+    position: relative;
+}
+
+.cc {
+    margin: 10px;
+}
+
+.speicality-img span {
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.381);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 75%;
+    right: 4%;
+    background-color: white;
+}
+
+.dot {
+    border-radius: 50%;
+    height: 16px;
+    background-color: aqua;
+    width: 16px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+}
+.specialities-text {
+    margin-top: 15vh;
+}
+.sub-title {
+    color: #757575;
+    font-size: 16px;
+    text-align: center;
+    max-width: 600px;
+    margin: 15px  0;
+}
+.cl-head {
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.section-doctor {
+    height: 80vh;
+}
+
+.section-header-doct {
+    margin-top: -70px;
+    margin-left: 20px;
+}
+
+.section-header-doct h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #272b41;
+}
+
+.section-header-doct p {
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.doctor-slider {
+    margin-top: -100px;
+}
+.about-content {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.about-content p {
+    color: #272b41;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.about-content a {
+    background-color: #0de0fe;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    min-width: 150px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.section-features {
+    margin-top: 30px;
+    background-color: white;
+}
+.section-header-feature {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.img-fluid-f {
+    margin-top: 50px;
+}
+@media (max-width:970px) {
+
+    .section-1 {
+        padding-top: 7vh;
+        height: 58vh;
+    }
+    .heading-text {
+        font-size: 35px;
+    }
+    
+    .heading-p {
+        font-size: 16px;
+    }
+   
+.search-box {
+    width: 100%;
+}
+
+.search-box form {
+    flex-direction: column;
+}
+
+.search-box form input {
+    width: 300px;
+}
+.search-box form .form-control-2 {
+    width: 300px;
+}
+
+.search-box form button {
+    margin-left: 0px;
+    height: 37px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.section-specialities {
+    height: 52vh;
+}
+.specialities-text {
+    margin-top: 7vh;
+}
+.doctor-slider {
+    margin-top: 0px;
+    margin-left: -30px;
+}
+.section-header-doct {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.section-features {
+    margin-top: 100px;
+}
+.section-header-feature {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+}
+
+@media (max-width:500px) {
+
+.section-specialities {
+    height: 62vh;
+}
+.section-doctor {
+    height: 90vh;
+}
+
+.doctor-slider {
+    margin-top: 0px;
+    margin-left: -30px;
+}
+.section-header-doct {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.section-features {
+    margin-top: 100px;
+}
+.section-header-feature {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.section-header-doct {
+    margin-top: -100px;
+    margin-left: 20px;
+}
+.img-fluid-f {
+    width: 100%;
+}
+
+}
+
+@media (max-width:400px) {
+    
+.section-specialities {
+    height: 85vh;
+}
+.section-doctor {
+    height: 130vh;
+}
+
+.doctor-slider {
+    margin-top: 0px;
+    margin-left: -30px;
+}
+.section-header-doct {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.section-features {
+    margin-top: 100px;
+}
+.section-header-feature {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.section-header-doct {
+    margin-top: -100px;
+    margin-left: 20px;
+}
+.img-fluid-f {
+    width: 100%;
+}
+}
