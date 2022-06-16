@@ -3,6 +3,7 @@ import './Doctor.css';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
+import StarIcon from '@mui/icons-material/Star';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import logo6 from '../../pagess/Page1/img/doctor-thumb-01.jpg'
 import logo7 from '../../pagess/Page1/img/doctor-thumb-02.jpg'
@@ -33,22 +34,22 @@ function Doctor({image,name,type,rating,location,avalabe,rate}) {
         </h3>
         <p class="speciality">{type}</p>
         <div class="rating">
-            <i class="fas fa-star filled">⭐</i>
-            <i class="fas fa-star filled">⭐</i>
-            <i class="fas fa-star filled">⭐</i>
-            <i class="fas fa-star filled">⭐</i>
-            <i class="fas fa-star filled">⭐</i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"><StarIcon className='str'/></i>
+            <i class="fas fa-star filled"><StarIcon className='str'/></i>
+            <i class="fas fa-star filled"><StarIcon className='str'/></i>
+            <i class="fas fa-star filled"><StarIcon className='str'/></i>
             <span class="d-inline-block average-rating">({rating})</span>
         </div>
         <ul class="available-info">
             <li>
-                <AddLocationIcon/> {location}
+                <AddLocationIcon className='ic-l'/> {location}
             </li>
             <li>
-                <QueryBuilderIcon/> {avalabe}
+                <QueryBuilderIcon className='ic-l'/> {avalabe}
             </li>
             <li>
-                <LocalAtmIcon/> {rating}
+                <LocalAtmIcon className='ic-l'/> {rating}
                 <i class="fas fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i>
             </li>
         </ul>
