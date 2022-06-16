@@ -171,6 +171,7 @@
     padding: 20px ;
     width: 25%;
     transition: .5s ease;
+    white-space: nowrap;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -256,6 +257,7 @@
     color: #575757;
     background-color: white;
     transition: .3s ease;
+    margin-top: 10px;
 }
 
 .row-1 button:hover {
@@ -271,6 +273,7 @@
     padding: 7px 15px;
     color: #575757;
     background-color: white;
+    margin-top: 10px;
     transition: .3s ease;
 }
 
@@ -476,9 +479,134 @@
     }
 
     .clini-infos ul  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-left: -40px;
+    }
+}
+
+@media (max-width:750px) {
+.card {
+    width: 100%;
+}
+    
+.loc-box {
+    flex-direction: column;
+}
+.comment {
+    margin-left: -30px;
+}
+
+.tp h1 {
+    font-size: 20px;
+}
+.tp p {
+    font-size: 13px;
+}
+
+.md {
+    font-size: 14px;
+}
+
+.md span {
+    color: #09e5ab;
+    font-weight: 500;
+    margin-top: -25px;
+}
+
+.loc-box .right {
+    flex-direction: column;
+}
+.r-left h4 {
+    font-size: 16px;
+}
+
+.r-left p {
+    font-size: 13px;
+}
+}
+
+@media (max-width:500px) {
+    .tab {
+        width: 100%;
+    }
+    .tab-row {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .tab-btn {
+        border-bottom: 3px solid#b8b8b8;
+        padding: 15px 0px;
+        width: 25%;
+    }
+
+    .tab-btn h5 {
+        font-size: 14px;
+    }
+    
+.listing-hours {
+    background-color: #b8b8b82b;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+.listing-day {
+    margin: 7px 0;
+}
+.time-items {
+    font-size: 13px;
+    white-space: nowrap;
+}
+.comment-reply {
+    display: flex;
+    flex-direction: column;
+}
+.recommend-btn {
+    display: flex;
+    flex-direction: column;
+}
+.like-btn {
+    width: 75px;
+    margin-top: 5px;
+}
+
+.flx-btn {
+    margin-top: 7px;
+}
+
+.meta-data {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (max-width:390px) {
+    .tab {
+        width: 100%;
+    }
+    .tab-row {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .tab-btn {
+        border-bottom: 3px solid#b8b8b8;
+        padding: 10px 0px;
+        width: 25%;
+        white-space: nowrap;
+    }
+
+    .tab-btn h5 {
+        font-size: 13px;
+    }
+   
+    .doctor-action {
+        display: flex;
+        align-items: center;
+    }
+    .btn-white {
+        height: 40px;
+        width: 40px;
+        display: flex;justify-content: center;
     }
 }

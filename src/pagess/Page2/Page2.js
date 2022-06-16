@@ -194,16 +194,16 @@ function Page2() {
         <Tabs className="tab">
           <TabList className="tab-row">
             <Tab className="tab-btn">
-              <h5>Overview</h5>
+              <h5 className="tab-text">Overview</h5>
             </Tab>
             <Tab className="tab-btn">
-              <h5>Location</h5>
+              <h5 className="tab-text">Location</h5>
             </Tab>
             <Tab className="tab-btn">
-              <h5>Reviews</h5>
+              <h5 className="tab-text">Reviews</h5>
             </Tab>
             <Tab className="tab-btn">
-              <h5>Business Hours</h5>
+              <h5 className="tab-text">Business</h5>
             </Tab>
           </TabList>
 
@@ -514,12 +514,14 @@ function Page2() {
 															</a>
 														   <p class="recommend-btn">
 															<span>Recommend?</span>
+                              <div className="flx-btn">
 															<a href="#" class="like-btn">
 																<i class="far fa-thumbs-up"><ThumbUpOffAltIcon/></i> Yes
 															</a>
-															<a href="#" class="dislike-btn">
+															<a href="#" class="like-btn">
 																<i class="far fa-thumbs-down"><ThumbDownOffAltIcon/></i> No
 															</a>
+                              </div>
 														</p>
 														</div>
 													</div>
@@ -559,12 +561,14 @@ function Page2() {
                             </a>
                              <p class="recommend-btn">
                             <span>Recommend?</span>
-                            <a href="#" class="like-btn">
-                              <i class="far fa-thumbs-up"><ThumbUpOffAltIcon/></i> Yes
-                            </a>
-                            <a href="#" class="dislike-btn">
-                              <i class="far fa-thumbs-down"><ThumbDownOffAltIcon/></i> No
-                            </a>
+                            <div className="flx-btn">
+															<a href="#" class="like-btn">
+																<i class="far fa-thumbs-up"><ThumbUpOffAltIcon/></i> Yes
+															</a>
+															<a href="#" class="like-btn">
+																<i class="far fa-thumbs-down"><ThumbDownOffAltIcon/></i> No
+															</a>
+                              </div>
                           </p>
                           </div>
 															</div>
@@ -607,12 +611,14 @@ function Page2() {
                             </a>
                              <p class="recommend-btn">
                             <span>Recommend?</span>
-                            <a href="#" class="like-btn">
-                              <i class="far fa-thumbs-up"><ThumbUpOffAltIcon/></i> Yes
-                            </a>
-                            <a href="#" class="dislike-btn">
-                              <i class="far fa-thumbs-down"><ThumbDownOffAltIcon/></i> No
-                            </a>
+                            <div className="flx-btn">
+															<a href="#" class="like-btn">
+																<i class="far fa-thumbs-up"><ThumbUpOffAltIcon/></i> Yes
+															</a>
+															<a href="#" class="like-btn">
+																<i class="far fa-thumbs-down"><ThumbDownOffAltIcon/></i> No
+															</a>
+                              </div>
                           </p>
                           </div>
                         </div>
