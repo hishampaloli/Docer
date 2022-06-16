@@ -75,10 +75,10 @@ function Page1() {
           <div class="banner-header text-center">
             <Fade bottom>
               <h1 className="heading-text">
-                Search Doctor, Make an Appointment
+                Search Beauty Experts, Make an Appointment
               </h1>
               <p className="heading-p">
-                Discover the best doctors, clinic & hospital the city nearest to
+                Discover the beauty experts, hair dressers & massage therapist nearest to
                 you.
               </p>
             </Fade>
@@ -102,7 +102,7 @@ function Page1() {
                     placeholder="🔍 Search Doctors, Clinics, Hospitals, Diseases Etc"
                   />
                   <span class="form-text">
-                    Ex : Dental or Sugar Check up etc...
+                    Ex : Facial, Waxing, Manicure, Pedicure etc...
                   </span>
                 </div>
                 <button
@@ -120,26 +120,35 @@ function Page1() {
       <div className='section-what'>
           <div className="what-text">
           <Fade bottom>
-            <h1 className='cl-head '>What are you looking for ?</h1>
+            <h1 className='cl-head '>Book Services for ?</h1>
             </Fade>
           </div>
           <div className="what-img-cont">
           <Fade bottom >
-            <div className="box box-1">
-              <h2>Visit a Doctor</h2>
-              <button>Book Now</button>
+          <div className="box-m">
+          <div className="box box-1">
+             
             </div>
+            <h2 className='box-h2'>Female Beauty Services</h2>
+            <button>Book Now</button>
+          </div>
+           
             </Fade>
             <Fade bottom >
+            <div className="box-m">
             <div className="box box-2">
-              <h2>Find a Pharmacy</h2>
-              <button>Book Now</button>
+            </div>
+            <h2 className='box-h2'>Female Massage Services</h2>
+            <button>Book Now</button>
             </div>
             </Fade>
             <Fade bottom >
+            <div className="box-m">
             <div className="box box-3">
-              <h2>Find a Lab</h2>
-              <button>Comming soon</button>
+            </div>
+
+            <h2 className='box-h2'>Female Hair Services</h2>
+              <button>Book Now</button>
             </div>
             </Fade>
           </div>
@@ -150,12 +159,11 @@ function Page1() {
       <div class="container-fluid section-specialities ">
         <div class="section-header text-center aling-items-justify specialities-text">
           <Fade bottom>
-            <h2 className="cl-head">Clinic and Specialities</h2>
+            <h2 className="cl-head">Pick Your Favorite Salon Services at Home Service</h2>
             </Fade>
             <Fade bottom>
             <p class="sub-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Best Quality Products | Certified Beauticians | Pocket-Freindly Offers | Delhi NCR, Noida,Faridabad, Greater Noida 
             </p>
           </Fade>
         </div>
@@ -193,52 +201,52 @@ function Page1() {
                 >
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo1} text="Urology" />
+                    <Specality image={logo1} text="Facial" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo2} text="Neurology" />
+                    <Specality image={logo2} text="Waxing" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo3} text="Orthopedic" />
+                    <Specality image={logo3} text="Threading" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo4} text="Cardiologist" />
+                    <Specality image={logo4} text="Manicure" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo5} text="Dentist" />
+                    <Specality image={logo5} text="Pedicure" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo1} text="Urology" />
+                    <Specality image={logo1} text="Facial" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo2} text="Neurology" />
+                    <Specality image={logo2} text="Waxing" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo3} text="Orthopedic" />
+                    <Specality image={logo3} text="Threading" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo4} text="Cardiologist" />
+                    <Specality image={logo4} text="Manicure" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo5} text="Dentist" />
+                    <Specality image={logo5} text="Pedicure" />
                   </SwiperSlide>
                 </Swiper>
               </div>
@@ -255,23 +263,18 @@ function Page1() {
             <div class="col-lg-4">
               <div class="section-header-doct ">
                 <Fade bottom>
-                  <h2>Book Our Doctor</h2>
-                  <p>Lorem Ipsum is simply dummy text </p>
+                  <h2>Certified Beauty Experts</h2>
+                  <p>Discover the best beauty experts nearest to you. </p>
                 </Fade>
               </div>
               <div class="about-content">
               <Fade bottom>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum.
+                Ab Aap apni Beauty Services ke liye bahut aasani se Reviews or Experience dekh kar Apne Najdeeki Certified Beauty Experts ke saath Salon at Home ka Appointment Book kar sakte hai. Beauty Players aapko 50+ categories ke saath Home Salon Service ko provide karne wale Certified Beauty Experts ke saath jodata hai.
+
+
                 </p>
-                <p>
-                  web page editors now use Lorem Ipsum as their default model
-                  text, and a search for 'lorem ipsum' will uncover many web
-                  sites still in their infancy. Various versions have evolved
-                  over the years, sometimes
-                </p>
+               
                 </Fade>
                 <Fade bottom>
                 <a>Read More..</a>
