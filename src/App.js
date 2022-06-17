@@ -13,9 +13,9 @@ function App() {
     <Router>
     <Header />
       <Routes>
-        <Route exact path="/" element={<Page1 />} />
-        <Route exact path="/pa" element={<Page2 />} />
-        <Route exact path="/page3" element={<Page3 />} />
+        <Route exact path="/page1" element={<Page1 />} />
+        <Route exact path="/page2" element={<Page2 />} />
+        <Route exact path="/" element={<Page3 />} />
         <Route exact path="/page4" element={<Page4 />} />
       </Routes>
     </Router>

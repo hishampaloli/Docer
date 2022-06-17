@@ -1,0 +1,153 @@
+.location p{
+    color: #757575
+}
+
+.doc-name {
+    color: #2E3842;
+}
+
+.day-slot ul{
+    display: flex;
+}
+
+.day-slot ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: #2E3842;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 14.28%;
+}
+.slot-date {
+    white-space: nowrap;
+    color: #757575;
+    font-size: 14px;
+}
+.booking-schedule {
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.schedule-header {
+    width: 100%;
+}
+.schedule-cont {
+    width: 100%;
+}
+.clearfix li .selected{
+    background-color: #42c0fb;
+    border: 1px solid #42c0fb;
+    color: #fff;
+}
+.cardd {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid rgba(211, 211, 211, 0.4);
+    border-radius:10px ;
+    max-width: 1300px;
+    width: 90%;
+}
+.clearfix {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+.clearfix li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+.clearfix li a:hover {
+    background-color: #42c0fb;
+    color: white;
+}
+.clearfix li a {
+    text-decoration: none;
+    transition: .3s ease;
+    color: #757575;
+    background-color: #e9e9e9;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px 25px;
+}
+
+.main-cont .div-bt {
+    width: 90%;
+    display: flex;
+    max-width: 1300px;
+}
+
+.main-cont .bt {
+    background-color: #09e5ab;
+    border: 1px solid #09e5ab;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    min-width: 120px;
+    border-radius: 7px;
+    color: whitesmoke;
+}
+
+@media (max-width:700px) {
+    .clearfix li a {
+        padding: 5px;
+    }
+    
+.day-slot ul li {
+    flex-direction: row;
+    font-size: 16px;
+    width: 100%;
+    background-color: rgba(234, 234, 234, 0.406);
+    padding: 21px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.day-slot ul {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+.slot-date {
+    white-space:nowrap;
+    color: #757575;
+    font-size: 14px;
+}
+.ch-ic {
+    display: none;
+}
+.booking-schedule {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule-cont {
+    width: 100%;
+}
+.clearfix li {
+    flex-direction: row;
+}
+.clearfix {
+    flex-direction: column;
+    margin-left: 0px;
+}
+.cardd {
+    padding: 0px;
+    width: 100%;
+}
+}
