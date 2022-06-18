@@ -54,11 +54,11 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="flex flex-col flex-1 space-y-6 col-span-3">
+        <div className="flex flex-col flex-1 space-y-6 col-span-3" style={{fontFamily:'sans-serif'}}>
           <span className="text-md font-semibold uppercase">Contact Info</span>
           <div className="flex flex-col">
             <span className="text-slate-400">Address:</span>
-            <p className="p-0 m-0">
+            <p className="p-0 m-0 " style={{fontFamily:'sans-serif'}}>
               Salacious styles private limited.No.1580-H-1-B, Timber Market,
               Opposite DTC Terminal, GT Road Shahdara, East Delhi, North East
               Delhi, Inida, 110032
@@ -73,7 +73,7 @@ export default function Footer() {
             <p className="p-0 m-0">hello@beautyplayers.com</p>
           </div>
         </div>
-        <div className="flex flex-col flex-1 space-y-6 col-span-2">
+        <div className="flex flex-col flex-1 space-y-6 col-span-2" style={{fontFamily:'sans-serif'}}>
           <span className="text-md font-semibold uppercase">
             Privacy Policy Page
           </span>
@@ -82,7 +82,7 @@ export default function Footer() {
               <a
                 href={item.href}
                 key={`firstnav${index}`}
-                style={{ textDecoration: "none", color: "rgb(219, 219, 219)" }}
+                style={{ textDecoration: "none", color: "rgb(160, 160, 160)" }}
               >
                 <li className="hover:text-white smooth-transition">
                   {item.name}
@@ -91,14 +91,14 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col flex-1 space-y-6 col-span-2">
+        <div className="flex flex-col flex-1 space-y-6 col-span-2 " style={{fontFamily:'sans-serif'}}>
           <span className="text-md font-semibold uppercase">My Account</span>
           <ul className="space-y-4 flex flex-col text-xs text-slate-400">
             {secondNavigation.map((item, index) => (
               <a
                 href={item.href}
                 key={`secondnav${index}`}
-                style={{ textDecoration: "none", color: "rgb(219, 219, 219)" }}
+                style={{ textDecoration: "none", color: "rgb(160, 160, 160)" }}
               >
                 <li className="hover:text-white smooth-transition">
                   {item.name}
