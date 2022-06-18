@@ -44,17 +44,21 @@
     display: flex;
 }
 .doctor-img img {
-    width:200px;
+    min-width:200px;
+    max-width: 200px;
     border-radius: 5px;
 }
 
 .doc-info-cont {
     margin-left: 30px;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 .doc-info-right{
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .doc-name {
     color: #272b41;
@@ -114,7 +118,12 @@
     padding: 3px 10px;
     margin-right: 5px;
 }
-
+.clini-infos ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -30px;
+}
 .clini-infos ul li {
     display: block;
     line-height: 30px;
@@ -438,15 +447,19 @@
 .time {
     color: #757575;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1290px) {
 
     .doc-info-cont {
         margin-left: 30px;
-        margin-right: 150px;
+        margin-right: 0px;
     }
     
     .doc-info-right{
-        margin-left: 80px;
+        margin-left: 40px;
+    }
+    .doctor-action {
+        display: flex;
+        align-items: center;
     }
 }
 
