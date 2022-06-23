@@ -11,11 +11,16 @@ import Specality from "../../components/Specality/Specality";
 import Fade from "react-reveal/Fade";
 import StarIcon from "@mui/icons-material/Star";
 import Doctor from "../../components/doctor/Doctor";
-import logo1 from "./img/specialities-01.png";
-import logo2 from "./img/specialities-02.png";
-import logo3 from "./img/specialities-03.png";
-import logo4 from "./img/specialities-04.png";
-import logo5 from "./img/specialities-05.png";
+import logo1 from "./img/Facial.png";
+import logo2 from "./img/Waxing.png";
+import logo3 from "./img/Threading.png";
+import logo4 from "./img/Cleanup.png";
+import logo5 from "./img/Pedicure.png";
+import logo5a from "./img/Makeup.png";
+import logo5b from "./img/Nail Artist.png";
+import logo5c from "./img/Smoothening.png";
+import logo5d from "./img/Hair Style.png";
+
 import logo6 from "./img/doctor-thumb-01.jpg";
 import logo7 from "./img/doctor-thumb-02.jpg";
 import logo8 from "./img/doctor-thumb-03.jpg";
@@ -125,21 +130,38 @@ function Page1() {
           </Fade>
         </div>
         <div className="what-img-cont">
-          <Fade bottom>
-            <div className="box-m">
-              <div className="box box-1"></div>
-              <h2 className="box-h2">Female Beauty Services</h2>
-              <button>Book Now</button>
-            </div>
-          </Fade>
-          <Fade bottom>
-            <div className="box-m">
-              <div className="box box-2"></div>
-              <h2 className="box-h2">Female Massage Services</h2>
-              <button>Book Now</button>
-            </div>
-          </Fade>
-          <Fade bottom>
+         
+        
+          <Swiper
+                  slidesPerView={4}
+                  spaceBetween={10}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  breakpoints={{
+                    340: {
+                      slidesPerView: 1,
+                      spaceBetween: 30,
+                    },
+                    540: {
+                      slidesPerView: 2,
+                      spaceBetween: 30,
+                    },
+                    768: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 20,
+                    },
+                  }}
+                  modules={[Pagination]}
+                  className="mySwiper"
+                  style={{ padding: "40px 0px" }}
+                >
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
             <div className="box-m">
               <div className="box box-3"></div>
 
@@ -147,6 +169,55 @@ function Page1() {
               <button>Book Now</button>
             </div>
           </Fade>
+                 </SwiperSlide>
+                 <SwiperSlide  className="cc" >
+                 <Fade bottom>
+            <div className="box-m">
+              <div className="box box-2"></div>
+              <h2 className="box-h2">Female Massage Services</h2>
+              <button>Book Now</button>
+            </div>
+          </Fade>
+                 </SwiperSlide>
+                 <SwiperSlide  className="cc" >
+                 <Fade bottom>
+            <div className="box-m">
+              <div className="box box-2"></div>
+              <h2 className="box-h2">Female Massage Services</h2>
+              <button>Book Now</button>
+            </div>
+          </Fade>
+                 </SwiperSlide>
+
+                 <SwiperSlide className="cc">
+                  <Fade bottom>
+            <div className="box-m">
+              <div className="box box-3"></div>
+
+              <h2 className="box-h2">Female Hair Services</h2>
+              <button>Book Now</button>
+            </div>
+          </Fade>
+                 </SwiperSlide>
+                 <SwiperSlide  className="cc" >
+                 <Fade bottom>
+            <div className="box-m">
+              <div className="box box-2"></div>
+              <h2 className="box-h2">Female Massage Services</h2>
+              <button>Book Now</button>
+            </div>
+          </Fade>
+                 </SwiperSlide>
+                 <SwiperSlide  className="cc" >
+                 <Fade bottom>
+            <div className="box-m">
+              <div className="box box-2"></div>
+              <h2 className="box-h2">Female Massage Services</h2>
+              <button>Book Now</button>
+            </div>
+          </Fade>
+                 </SwiperSlide>
+                </Swiper>
         </div>
       </div>
 
@@ -215,7 +286,7 @@ function Page1() {
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo4} text="Manicure" />
+                    <Specality image={logo4} text="CleanUp" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
@@ -225,28 +296,24 @@ function Page1() {
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo1} text="Facial" />
+                    <Specality image={logo5a} text="Makeup" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo2} text="Waxing" />
+                    <Specality image={logo5b} text="Nail Artist" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo3} text="Threading" />
+                    <Specality image={logo5c} text="Smoothening" />
                   </SwiperSlide>
 
                   <SwiperSlide className="cc">
                     {" "}
-                    <Specality image={logo4} text="Manicure" />
+                    <Specality image={logo5d} text="Hair style" />
                   </SwiperSlide>
 
-                  <SwiperSlide className="cc">
-                    {" "}
-                    <Specality image={logo5} text="Pedicure" />
-                  </SwiperSlide>
                 </Swiper>
               </div>
             </Fade>
@@ -305,7 +372,7 @@ function Page1() {
                       },
                       1024: {
                         slidesPerView: 3,
-                        spaceBetween: 40,
+                        spaceBetween: 100,
                       },
                     }}
                     modules={[Pagination]}
@@ -438,7 +505,7 @@ function Page1() {
           <div class="row">
             <div class="col-md-5 features-img">
               <Fade bottom>
-                x
+                
                 <img src={image1} class="img-fluid-f" alt="Feature" />
               </Fade>
             </div>
@@ -549,7 +616,37 @@ function Page1() {
       </div>
 
       <div className="news-cont">
-        <Fade bottom>
+
+      <Swiper
+                  slidesPerView={4}
+                  spaceBetween={10}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  breakpoints={{
+                    340: {
+                      slidesPerView: 2,
+                      spaceBetween: 50,
+                    },
+                    540: {
+                      slidesPerView: 2,
+                      spaceBetween: 50,
+                    },
+                    800: {
+                      slidesPerView: 2,
+                      spaceBetween: 100,
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 40,
+                    },
+                  }}
+                  modules={[Pagination]}
+                  className="mySwiper"
+                  style={{ padding: "40px 0px" }}
+                >
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
           <div className="news-box">
             <div className="img-box">
               <img src={logo11} alt="" />
@@ -573,8 +670,10 @@ function Page1() {
             </div>
           </div>
         </Fade>
+                  </SwiperSlide>
 
-        <Fade bottom>
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
           <div className="news-box">
             <div className="img-box">
               <img src={logo11} alt="" />
@@ -598,8 +697,10 @@ function Page1() {
             </div>
           </div>
         </Fade>
+                  </SwiperSlide>
 
-        <Fade bottom>
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
           <div className="news-box">
             <div className="img-box">
               <img src={logo11} alt="" />
@@ -623,8 +724,10 @@ function Page1() {
             </div>
           </div>
         </Fade>
+                  </SwiperSlide>
 
-        <Fade bottom>
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
           <div className="news-box">
             <div className="img-box">
               <img src={logo11} alt="" />
@@ -648,6 +751,94 @@ function Page1() {
             </div>
           </div>
         </Fade>
+                  </SwiperSlide>
+
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
+          <div className="news-box">
+            <div className="img-box">
+              <img src={logo11} alt="" />
+            </div>
+            <div className="info">
+              <div className="name">
+                <img src={logo1} alt="" />
+                <p>Dr. Ruby Perrin</p>
+              </div>
+              <p className="p">
+                <AccessTimeIcon /> 3 Dec 2022
+              </p>
+              <div className="heading">
+                <h2>Doccure - Making your Clinic painless visit ?</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Autem, commodi veritatis nihil facere illo?
+                </p>
+              </div>
+            </div>
+          </div>
+        </Fade>
+                  </SwiperSlide>
+
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
+          <div className="news-box">
+            <div className="img-box">
+              <img src={logo11} alt="" />
+            </div>
+            <div className="info">
+              <div className="name">
+                <img src={logo1} alt="" />
+                <p>Dr. Ruby Perrin</p>
+              </div>
+              <p className="p">
+                <AccessTimeIcon /> 3 Dec 2022
+              </p>
+              <div className="heading">
+                <h2>Doccure - Making your Clinic painless visit ?</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Autem, commodi veritatis nihil facere illo?
+                </p>
+              </div>
+            </div>
+          </div>
+        </Fade>
+                  </SwiperSlide>
+
+                  <SwiperSlide className="cc">
+                  <Fade bottom>
+          <div className="news-box">
+            <div className="img-box">
+              <img src={logo11} alt="" />
+            </div>
+            <div className="info">
+              <div className="name">
+                <img src={logo1} alt="" />
+                <p>Dr. Ruby Perrin</p>
+              </div>
+              <p className="p">
+                <AccessTimeIcon /> 3 Dec 2022
+              </p>
+              <div className="heading">
+                <h2>Doccure - Making your Clinic painless visit ?</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Autem, commodi veritatis nihil facere illo?
+                </p>
+              </div>
+            </div>
+          </div>
+        </Fade>
+                  </SwiperSlide>
+
+
+                </Swiper>
+     
+
+        
       </div>
 
       <Footer />
