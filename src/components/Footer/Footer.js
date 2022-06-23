@@ -8,6 +8,8 @@ import FooterLogo from "./footer-logo.png";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Payment from "./payment.png";
 import './Footer.css'
+import { useState } from "react";
+import { display } from "@mui/system";
 
 interface Navigation {
   name: string;
@@ -32,6 +34,10 @@ const secondNavigation: Navigation[] = [
 ];
 
 export default function Footer() {
+
+  const [details, setdetails] = useState('');
+
+
   return (
     <div className="  bg-gray-900 pt-7 text-white px-0 text-xs font-light">
       <div className=" full container mx-auto">
@@ -114,9 +120,67 @@ export default function Footer() {
           </button>
         </div>
         <div className="footer-small">
-        <div className="div-bt"><button> Contact Info<ArrowDropDownIcon /></button></div>
-        <div className="div-bt"><button>Privacy Policy Page <ArrowDropDownIcon /></button></div>
-        <div className="div-bt"><button>My Account <ArrowDropDownIcon /></button></div>
+        <div className="div-bt"><button onClick={() => setdetails('1') }> Contact Info<ArrowDropDownIcon /></button>
+        <div className="footer-show">
+        <div className={details === '1' ? 'opened-div' : 'closed-div'} style={{fontFamily:'sans-serif'}}>
+          <div className="flex flex-col">
+            <span className="text-slate-400">Address:</span>
+            <p className="p-0 m-0 " style={{fontFamily:'sans-serif'}}>
+              Salacious styles private limited.No.1580-H-1-B, Timber Market,
+              Opposite DTC Terminal, GT Road Shahdara, East Delhi, North East
+              Delhi, Inida, 110032
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-slate-400">Phone:</span>
+            <p className="p-0 m-0">8282823392</p>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-slate-400">Email:</span>
+            <p className="p-0 m-0">hello@beautyplayers.com</p>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div className="div-bt"><button  onClick={() => setdetails('2') }>Privacy Policy Page <ArrowDropDownIcon /></button>
+        <div className={details ==='2' ? 'opened-div' : 'closed-div'}  style={{fontFamily:'sans-serif'}}>
+          <span className="text-md font-semibold uppercase">
+            Privacy Policy Page
+          </span>
+          <ul className="space-y-4 flex flex-col text-xs text-slate-400">
+            {firstNavigation.map((item, index) => (
+              <a
+                href={item.href}
+                key={`firstnav${index}`}
+                style={{ textDecoration: "none", color: "rgb(160, 160, 160)" }}
+              >
+                <li className="hover:text-white smooth-transition">
+                  {item.name}
+                </li>
+              </a>
+            ))}
+          </ul>
+        </div></div>
+        <div className="div-bt"><button onClick={() => setdetails('3') }>My Account <ArrowDropDownIcon /></button>
+        <div className={details ==='3' ? 'opened-div' : 'closed-div'} style={{fontFamily:'sans-serif'}}>
+          <ul className="space-y-4 flex flex-col text-xs text-slate-400">
+            {secondNavigation.map((item, index) => (
+              <a
+                href={item.href}
+                key={`secondnav${index}`}
+                style={{ textDecoration: "none", color: "rgb(160, 160, 160)" }}
+              >
+                <li className="hover:text-white smooth-transition">
+                  {item.name}
+                </li>
+              </a>
+            ))}
+          </ul>
+          <span className="text-md font-semibold uppercase">Be A Seller</span>
+          <button className="h-10 w-24 text-xs rounded bg-green-600 text-white hover:bg-pink-600 py-2 px-4 smooth-transition">
+            Apply Now
+          </button>
+        </div></div>
         
         </div>
       </div>
