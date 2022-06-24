@@ -8,9 +8,7 @@
     color: white;
 }
 .red {
-    color: maroon;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: maroon; 
 }
 .toSplit {
     display: flex;
