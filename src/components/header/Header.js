@@ -169,7 +169,7 @@ function Header() {
         </div>
 
         <div className="switch-btn">
-          <h3 className={delivery ? "red" : "grey"}>BOOK</h3>
+          <strong className={delivery ? "red" : "grey"}>BOOK</strong>
           <GreenSwitch
             {...label}
             defaultChecked
@@ -177,7 +177,7 @@ function Header() {
               delivery ? setDelivery(false) : setDelivery(true);
             }}
           />
-          <p className={!delivery ? "red" : "grey"}>RESELL</p>
+          <strong className={!delivery ? "red" : "grey"}>RESELL</strong>
         </div>
 
         <div
